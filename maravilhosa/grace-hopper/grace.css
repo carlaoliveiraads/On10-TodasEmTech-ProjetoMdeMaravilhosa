@@ -1,0 +1,474 @@
+* {
+    box-sizing: border-box;
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    margin: 0;
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+/* define que as imagens tem que ter o tamanho máximo da div mãe */
+.img-responsive {
+    width: 100%;
+}
+
+/* define o tamanho da caixa */
+.container {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 960px;
+    }
+
+/* --- Mobile First--- */
+/* NAV  --- NAV  --- NAV */
+
+.navegacao {
+    background-color: #674582;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+    padding: 24px;
+    z-index: 99;
+    position: fixed;
+    width: 100%;
+}
+
+.navegacao__logo {
+    max-width: 200px;
+}
+
+.navegacao__box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+}
+
+/* define o tamanho da caixa */
+.container {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 960px;
+}
+
+.navegacao__itens {
+    display: none;
+}
+
+.navegacao__menu-hamburguer img {
+    border-radius: 2px;
+}
+
+/* HEADER  --- HEADER  --- HEADER */
+
+.header {
+    min-height: 40px;
+    height: 500px;
+    background: url(../grace-hopper/imagens/bg-maravilhosa.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: flex-end;
+    text-align: center;
+}
+
+.principal {
+    margin-bottom: 20px;
+}
+
+.principal__titulo {
+    color: #c6a2e4;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 900;
+    text-shadow: 5px 5px 5px #4f4f4f;
+}
+
+/* MAIN  --- MAIN  --- MAIN*/
+main{
+  margin-right:8px;
+  margin-left:8px;
+}
+
+#titulo{
+ color: #674582;
+ font-weight: bolder;
+ font-size: 18px;
+ margin:25px ;
+}
+
+p {
+  line-height:2;
+  color: #652995;
+}
+
+.sobre {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    display: flex;
+}
+
+.grace-photo {
+    width: 250px;
+    height: 150px;
+    border-radius: 5px;
+}
+
+.sobre p {
+    margin-left: 20px;
+}
+
+.frase {
+    width: 100%;
+    padding: 40px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-width: thick;
+    border-style: solid;
+    border-color: #674582;
+    color: #674582;
+    font-weight: bolder;
+    font-size: 18px;
+}
+
+.historia {
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.grace-ft {
+    width: 100%;
+    min-height: 40px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.autora {
+    padding: 35px;
+    background-color: #c083b9;
+    color: #652995;
+    font-size: 12px;
+    text-align: center;
+    font-weight: bolder;
+    margin-bottom: 30px;
+    align-items: center;
+    display: flex;
+}
+
+.carla-photo{
+  width: 120px;
+    height: 110px;
+    border-radius: 5px;
+    margin-right: 15px;
+}
+
+.linkedin:hover{
+  color: #c6a2e4;
+}
+
+/* --- BOTAO --- */
+
+.btn {
+    font-weight: bold;
+    padding: 16px;
+    border-radius: 5px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.btn_roxo {
+    color: white;
+    background-color: #c083b9;
+    display: block;
+    max-width: 200px;
+    transition: all 0.5s;
+    margin: 0 auto;
+}
+
+.btn_roxo:hover,
+.btn_roxo:focus {
+    transform: translateY(-06px);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+    background-color: rgb(192, 156, 188);
+}
+
+.btn_center {
+    margin: 0 auto;
+}
+
+/* --- FOOTER --- */
+
+.rodape {
+    background-color: #323534;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rodape__principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.rodape__principal > * {
+    margin: 16px 0;
+}
+
+.rodape__navegacao > li {
+    font-size: 14px;
+    margin: 8px;
+}
+
+.rodape__navegacao a {
+    transition: all 0.5s;
+}
+
+.rodape__navegacao a:hover {
+    color: #c083b9;
+}
+
+.rodape__logo {
+    max-width: 200px;
+    align-items: center;
+    justify-content: center;
+}
+
+.rodape__cc {
+    width: 100%;
+    background-color: #292a2a;
+    font-size: 14px;
+    opacity: 0.5;
+    text-align: center;
+    padding: 10px;
+}
+
+/*  --- TABLET --- --- TABLET --- */
+@media (min-width: 768px) {
+
+  /* --- NAV --- */
+  .navegacao__itens {
+    position: static;
+    display: flex;
+    padding: 0;
+    width: auto;
+  }
+
+  .navegacao__nav { 
+    color: #fff;
+    margin-bottom: 0;
+  }
+    
+  .navegacao__itens ul {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+    
+    .navegacao__itens li {
+    font-size: 14px;
+    margin: 0 9px;
+  }
+
+  .navegacao__itens.ativo {
+    display: block;
+    right: 0;
+    top: 85px;
+    width: 100%;
+    background-color: #674582;
+    text-align: center;
+    padding: 48px 0;
+    transition: right 1s;
+  }
+
+  .navegacao__itens li > a {
+    transition: all .2s;
+  }
+
+  .navegacao__itens li > a:hover {
+    color: #C083B9;
+  }
+    
+  .navegacao__menu-hamburguer {
+    display: none;
+  }
+
+  /* MAIN  --- MAIN  --- MAIN*/
+
+  main{
+    margin-right:15px;
+    margin-left:15px;
+    margin-top:30px ;
+  }
+
+
+  section{
+    margin-bottom:80px;
+  }
+
+
+   p{
+    font-size:20px;
+       }
+
+       
+  #titulo{
+    color: #674582;
+    font-weight: bolder;
+    font-size: 35px;
+    margin:25px ;
+    margin-left:210px;
+   }
+    
+   .grace-photo {
+    width: 300px;
+    height: 250px;
+    border-radius: 5px;
+  }
+  
+
+  .sobre {
+    margin-top:30px;
+    margin-bottom:30px;
+  }
+  
+
+  .frase {
+    margin-top:70px;
+    margin-bottom:70px;
+  }
+  
+  .historia p {
+     margin-bottom:20px;
+  }
+  
+
+  .autora {
+    padding: 35px;
+    background-color: #c083b9;
+    color: #652995;
+    font-size: 25px;
+    text-align: center;
+    font-weight: bolder;
+    margin-bottom: 80px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+}
+
+  .carla-photo{
+     width: 250px;
+    height: 250px;
+    border-radius: 5px;
+    margin-right: 15px;
+
+  /* --- FOOTER --- */
+
+  .rodape {
+    padding-top: 0;
+    }
+  
+    .rodape__principal {
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      width: 100%;
+    }
+  
+    .rodape__logo img {
+    max-width: 300px;
+    }
+  
+    .rodape__navegacao > li {
+     font-size: 14px;
+    }
+  
+    .rodape__redes-sociais img {
+      max-width: 32px;
+      margin-right: 8px;
+    }
+
+    .rodape__cc p{
+      color: aliceblue;
+    }
+
+    
+}
+
+/* --- DESKTOP--- --- DESKTOP--- --- DESKTOP--- --- DESKTOP---   */
+@media (min-width: 1200px) {
+  .navegacao__box {
+    max-width: 80%;
+  }
+
+  .navegacao__itens li {
+   font-size: 24px;
+    margin: 0 16px;
+  }
+    
+  .principal__sub {
+    font-size: 18px;
+    padding: 0px 400px 0px 0px;
+  }
+
+  .maravilhosas__perfil a img {
+    width: 280%;
+    border-radius: 10px;
+    
+}
+
+/* MAIN -------- MAIN --------- MAIN*/
+.principal__titulo {
+  color: #c6a2e4;
+  text-transform: uppercase;
+  font-size: 65px;
+  font-weight: 900;
+  text-shadow: 5px 5px 5px #4f4f4f;
+  
+}
+
+/* --- FOOTER --- */
+
+.rodape {
+  padding-top: 0;
+  }
+
+  .rodape__principal {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+
+  .rodape__logo img {
+  max-width: 300px;
+  }
+
+  .rodape__navegacao > li {
+   font-size: 14px;
+  }
+
+  .rodape__redes-sociais img {
+    max-width: 32px;
+    margin-right: 8px;
+  }
+
+
+ .rodape__cc p{
+   color: aliceblue;
+ }
+
+
+}
